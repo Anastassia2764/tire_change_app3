@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tire Changing Time</title>
+</head>
+<body>
+<h1 style="color: blue">Palun, valige rehvivahetuse võimaluse SIIT!</h1>
+<h3>Choose Your's Tire Change Time, Please!</h3>
+<form action="{{ url_for('select_company') }}" method="post">
+  <label>
+    <h3>Valige teenindavat firma siit:</h3>
+    <select id="company" name="company">
+      <option>London</option>
+      <option>Manchester</option>
+    </select>
+  </label>
+  <button type="submit" onclick="select_company" style="color: blue">Ok</button>
+</form>
+</body>
+</html>

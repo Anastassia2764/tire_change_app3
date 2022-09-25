@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>London Times</title>
+</head>
+<body>
+  <h2>Ajad ("London"): </h2>
+  <br>
+  <form action="{{ url_for('get_london_time') }}" method="post">
+    {% for message in get_flashed_messages()%}
+    <p> {{message}} </p>
+    {% endfor %}
+    <br>
+
+    <label>
+      <select id="london_times" name="london_times">
+        <option>1</option>
+        <option>2</option>
+      </select>
+    </label>
+
+    <input type="submit" value="Registreerun" id="get_london_time">
+  </form>
+</body>
+</html>

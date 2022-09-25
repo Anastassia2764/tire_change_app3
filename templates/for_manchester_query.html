@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tire Changing Time</title>
+</head>
+<body>
+<h1>Vali firma "Manchester" vaba aja saamise jaoks: </h1>
+<h3 style="color: red">Kirjuta, palun formaadis (2006-12-05)</h3>
+<label for="start_date_m">Alates kuupäevast:</label>
+<br>
+<br>
+<div>
+  <input type="text" id="start_date_m" name="start_date_m">
+</div>
+<br>
+<label for="number_m">Kui palju ajasid näita (maksimum):</label>
+<br>
+<br>
+<div>
+  <input type="number" id="number_m" name="number_m">
+</div>
+<br>
+<label for="pages_m">Kui palju lehte vahele jätta:</label>
+<br>
+<br>
+<div>
+  <input type="number" id="pages_m" name="pages_m">
+</div>
+<br>
+<form action="{{ url_for('select_range_manchester') }}" method="get">
+  <button type="submit" onclick="select_range_manchester" style="color: red">
+    GET
+  </button>
+</form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tire Changing Time</title>
+</head>
+<body>
+<form action="{{ url_for('select_range_london') }}" method="post">
+<h1>Vali firma "London" vaheaeg: </h1>
+  <h3 style="color: red">Kirjuta, palun formaadis (2006-12-05)</h3>
+<label for="stdate">Alates kuupäevast:</label>
+<br>
+<br>
+<div>
+  <input type="text" id="stdate" name="start_date">
+</div>
+<br>
+<label for="enddate">Kuni kuupäevani:</label>
+<br>
+<br>
+<div>
+  <input type="text" id="enddate" name="end_date">
+</div>
+<br>
+  <button type="submit" onclick="select_range_london" style="color: red">GET
+  </button>
+</form>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tire Changing Time</title>
+</head>
+<body>
+<h2 style="color: blue">You Valitud firma: {{g.company}}</h2>
+<form action="{{ url_for('select_car') }}" method="post">
+  <label>
+    <h3>Valige autotüüpi siit:</h3>
+    <select id="car" name="car">
+      <option>Sõiduauto</option>
+      <option>Veoauto</option>
+    </select>
+  </label>
+  <button type="submit" onclick="select_car" style="color: blue">Ok</button>
+</form>
+</body>
+</html>
